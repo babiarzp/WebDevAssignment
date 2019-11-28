@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Batteries R Us</title>
+    <link rel="stylesheet" type="text/css" href="css/A5.css">
+    <script type="text/javascript" src="js/A5.js"></script>
+    <h1>Batteries R Us</h1>
+  </head>
+  <body>
+    <div>
+    <form name="myform" method="Post" onsubmit="return formSubmit()" action="process.php">
+      <label>Name:*</label>
+      <input id="name"  type="text" name="name"><br/>
+
+      <label>Email:*</label>
+      <input id="email" placeholder="email@site.com" type="email" name="email"><br/>
+
+      <label>Password:*</label>
+      <input id="password" type="text" placeholder="will be used for login" name="password"></br>
+
+      <label>Phone:*</label>
+      <input id="phone" placeholder="000-000-0000" type="phone" name="phone"><br/>
+
+      <label>Address:*</label>
+      <input id="address"  type="text" name="address"><br/>
+
+      <label>City:*</label>
+      <input id="city"  type="text" name="city"><br/>
+
+      <label>Postal Code:*</label>
+      <input id="postalcode" placeholder="A1B 2C3" type="postalcode" name="postalcode"><br/>
+
+      <label>Province:*</label>
+      <select name="province" id="province">
+          <option value="">--options--</option>
+          <option value="1">Alberta</option>
+          <option value="2">British Columbia</option>
+          <option value="3">Manitoba</option>
+          <option value="4">New Brunswick</option>
+          <option value="5">Newfoundland</option>
+          <option value="6">Northwest Territories</option>
+          <option value="7">Nova Scotia</option>
+          <option value="8">Nunavut</option>
+          <option value="9">Ontario</option>
+          <option value="10">Price Edward Island</option>
+          <option value="11">Quebec</option>
+          <option value="12">Saskatchewan</option>
+          <option value="13">Yukon</option>
+      </select><br/>
+
+      <label>Duracel AA (20 pack) $20 </label>
+      <input id="durAA"  type="text" name="durAA"><br/>
+
+      <label>Duracel AAA (20 pack) $15 </label>
+      <input id="durAAA"  type="text" name="durAAA"><br/>
+
+      <label>Energizer AA (20 pack) $25 </label>
+      <input id="enerAA"  type="text" name="enerAA"><br/>
+
+      <label>Select Shipping Method:*</label>
+      <select name="shipping" id="shipping">
+          <option value="">--options--</option>
+          <option value="1">1 day shipping ($30)</option>
+          <option value="2">2 day shipping ($25)</option>
+          <option value="3">3 day shipping ($20)</option>
+          <option value="4">4 day shipping ($15)</option>
+
+      </select><br/>
+
+      <input type="submit" value="Submit Order" onclick="formSubmit()" onaction="process.php">
+
+      <p id="errors"></p>
+    </form>
+    <a href="index.html">Back</a>
+
+  </body>
+</html>
